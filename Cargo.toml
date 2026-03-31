@@ -1,0 +1,7 @@
+[package]
+name = "wi-fi-scanner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wifi_scan = "0.7"
