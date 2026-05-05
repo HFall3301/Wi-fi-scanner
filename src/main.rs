@@ -1,6 +1,7 @@
-use crate::app::ScannerApp;
-
 mod app;
+mod scanner;
+
+use crate::app::ScannerApp;
 
 fn main() -> eframe::Result<()> {
     let options = eframe::NativeOptions {
@@ -11,6 +12,6 @@ fn main() -> eframe::Result<()> {
     eframe::run_native(
         "Wi-fi scanner",
         options,
-        Box::new(|_cc| Ok(Box::new(ScannerApp::default()))),
+        Box::new(|cc| Ok(Box::new(ScannerApp::new(cc)))),
     )
 }
