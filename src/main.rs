@@ -1,3 +1,5 @@
+//! Native entry point for the Wi-Fi scanner.
+
 mod app;
 mod scanner;
 
